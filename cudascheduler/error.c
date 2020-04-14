@@ -24,8 +24,7 @@ set_program_name (const char *path)
 static void
 error (int exit_status, const char *mode, const char *message)
 {
-  fprintf (stderr, "%s: %s: %s.
-", program_name, mode, message);
+  fprintf (stderr, "%s: %s: %s.", program_name, mode, message);
 
   if (exit_status >= 0)
     exit (exit_status);
